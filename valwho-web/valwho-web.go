@@ -18,7 +18,7 @@ var libex = os.Getenv("libexec")
 
 func init() {
 	if libex == "" {
-		libex = "/usr/libexec/valheim"
+		libex = "/usr/libexec/valwho"
 	}
 }
 
