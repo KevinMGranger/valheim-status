@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+exec systemctl show "valheim@$1" --property=InvocationID | sed 's/InvocationID=//'

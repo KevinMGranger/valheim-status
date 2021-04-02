@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -eu
+
+exec journalctl "_SYSTEMD_INVOCATION_ID=$1" -g "Got connection|Closing socket"

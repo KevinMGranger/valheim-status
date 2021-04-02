@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -eu
+
+libex="${libexec:-/usr/libexec/valwho}"
+
+"$libex/logs" $("$libex/invocation" "$1") | "$libex/parse" | join -a 1 - ${idmap:-/var/lib/valheim/idmap}
